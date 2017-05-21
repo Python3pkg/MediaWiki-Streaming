@@ -30,7 +30,7 @@ def main(argv=None):
 def run(json_docs, fieldnames, header):
     
     if header:
-        print("\t".join(encode(fn) for fn in fieldnames))
+        print(("\t".join(encode(fn) for fn in fieldnames)))
     
     field_keys = [fn.split('.') for fn in fieldnames]
     
